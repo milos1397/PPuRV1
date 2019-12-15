@@ -1,0 +1,37 @@
+/*
+ * queue.h
+ *
+ *  Created on: Oct 17, 2019
+ *      Author: rtrk
+ */
+
+#ifndef QUEUE_H_
+#define QUEUE_H_
+
+#include <stdint.h>
+#include <stdio.h>
+
+typedef struct queue_el
+{
+	uint_least8_t value;
+	uint_least8_t x_coordinate;
+	uint_least8_t y_coordinate;
+	queue_el* next;
+}queue_el;
+
+typedef struct queue
+{
+	queue_el* front;
+	queue_el* rear;
+
+}queue;
+
+
+void initialize_queue(queue* queue);
+
+
+
+
+
+
+#endif /* QUEUE_H_ */

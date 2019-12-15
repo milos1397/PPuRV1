@@ -1,0 +1,24 @@
+/*
+ * queue.c
+
+ *
+ *  Created on: Oct 17, 2019
+ *      Author: rtrk
+ */
+#include "queue.h"
+
+
+
+
+void add_element(queue_el* queue_el,queue* queue)
+{
+	if(queue->rear == NULL)
+	{
+		queue->front = queue_el;
+		queue->rear = queue_el;
+	}else
+	{
+		queue->rear->next = queue_el;
+		queue->rear = queue_el;
+	}
+}

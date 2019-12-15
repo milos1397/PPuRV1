@@ -1,0 +1,19 @@
+13:55:53 **** Incremental Build of configuration Debug for project queue ****
+make all 
+Building file: ../queue.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -fPIC -MMD -MP -MF"queue.d" -MT"queue.d" -o "queue.o" "../queue.c"
+../queue.c: In function ‘queue_get_element’:
+../queue.c:56:2: warning: passing argument 1 of ‘queue_empty’ from incompatible pointer type [enabled by default]
+../queue.c:18:6: note: expected ‘struct queue *’ but argument is of type ‘struct queue **’
+Finished building: ../queue.c
+ 
+Building target: libqueue.a
+Invoking: GCC Archiver
+ar -r  "libqueue.a"  ./queue.o   
+ar: creating libqueue.a
+Finished building target: libqueue.a
+ 
+
+13:55:53 Build Finished (took 109ms)
+

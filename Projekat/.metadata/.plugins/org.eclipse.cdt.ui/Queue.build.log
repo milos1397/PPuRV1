@@ -1,0 +1,16 @@
+16:33:16 **** Incremental Build of configuration Debug for project Queue ****
+make all 
+Building file: ../queue.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -fPIC -MMD -MP -MF"queue.d" -MT"queue.d" -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building target: libQueue.a
+Invoking: GCC Archiver
+ar -r  "libQueue.a"  ./queue.o   
+ar: creating libQueue.a
+Finished building target: libQueue.a
+ 
+
+16:33:16 Build Finished (took 108ms)
+
